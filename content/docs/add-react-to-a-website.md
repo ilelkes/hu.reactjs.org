@@ -12,7 +12,7 @@ Használj pont annyi Reactet, amennyit szeretnél. Se többet, se kevesebbet.
 
 A React a kezdetektől fogva úgy lett tervezve, hogy fokozatosan lehessen adoptálni és **pontosan annyi Reactet kelljen használnod, amennyire szükség van**. Talán csak néhány "csipetnyi interaktivitást" szeretnél hozzáadni egy meglévő oldalhoz. A React komponensek erre tökéletesen megfelelnek.
 
-A legtöbb weblap nem single-page alkalmazás, és nem is kell annak lenniük. Próbáld a Reactet **csak pár sornyi kóddal és bárminemű kód transzformáló eszköz nélkül** hozzáadni a weblapod egy kis részéhez. Eztután fokozatosan tudod növelni a jelenlétét, vagy megtarthatod néhány dinamikus widgetként.
+A legtöbb weblap nem single-page alkalmazás, és nem is kell annak lenniük. Próbáld a Reactet **csak pár sornyi kóddal és bárminemű kód transzformáló eszköz nélkül** hozzáadni a weblapod egy kis részéhez. Ezután fokozatosan tudod növelni a jelenlétét, vagy megtarthatod néhány dinamikus widgetként.
 
 ---
 
@@ -159,7 +159,7 @@ Ha a leggyorsabban akarod kipróbálni a JSX-et a projektedben, add hozzá ezt a
 <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 ```
 
-Eztuán bármelyik `<script>` címkében használhatsz JSX-et, amihez hozzáadtad a `type="text/babel"` attribútumot. Itt egy letölthető [HTML példafájl JSX-el](https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html), játssz vele.
+Ezután bármelyik `<script>` címkében használhatsz JSX-et, amihez hozzáadtad a `type="text/babel"` attribútumot. Itt egy letölthető [HTML példafájl JSX-el](https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html), játssz vele.
 
 Ez a megközelítés nem rossz tanulás és egyszerű demók készítése esetén. Azonban lelassítja a weblapodat, és **alkalmatlanná teszi azt publikálásra**. Ha készen állsz a továbblépésre, távolítsd el a `<script>` címkét és a `type="text/babel"` attribútumot, amit az előbb hozzáadtál. Helyette a következő fejezetben beállítasz egy JSX preprocesszort, ami az összes `<script>` címkét automatikusan átalakítja.
 
