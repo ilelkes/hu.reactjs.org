@@ -236,7 +236,7 @@ function Blog(props) {
 }
 
 const posts = [
-  {id: 1, title: 'Helló, világ', content: 'Üdövzlünk a React tanulói kurzusában!'},
+  {id: 1, title: 'Helló, világ', content: 'Üdvözlünk a React tanulói kurzusában!'},
   {id: 2, title: 'Telepítés', content: 'A React-et npm-ből tudod telepíteni.'}
 ];
 ReactDOM.render(
