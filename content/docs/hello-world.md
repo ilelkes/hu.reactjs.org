@@ -36,7 +36,7 @@ Az útmutató minden fejezete a korábbi fejezetekben megszerzett tudásra épí
 
 ## Feltételezett tudásszint {#knowledge-level-assumptions}
 
-A React egy JavaScript könyvtár, ezért feltételezzük, hogy van alapvető ismereted a JavaScript programozási nyelvből. **Ha nem érzed magabiztosnak magad nézd át [a JavaScript tutoriált](https://developer.mozilla.org/hu/docs/Web/JavaScript/a_javascript_ujboli_bemutatasa), hogy ellenőrizd a tudásszinted** és hogy biztosan haladni tudj az útmutató olvasása közben anélkül, hogy elakadnál. Ez körübelül 30 perc és egy óra közötti időtartamot vesz igénybe, de utána nem fogod úgy érezni, mintha egyszerre kell megtanulnod a React-et és a JavaScript nyelvet is.
+A React egy JavaScript könyvtár, ezért feltételezzük, hogy van alapvető ismereted a JavaScript programozási nyelvből. **Ha nem érzed magabiztosnak magad nézd át [a JavaScript tutoriált](https://developer.mozilla.org/hu/docs/Web/JavaScript/a_javascript_ujboli_bemutatasa), hogy ellenőrizd a tudásszinted** és hogy biztosan haladni tudj az útmutató olvasása közben anélkül, hogy elakadnál. Ez körülbelül 30 perc és egy óra közötti időtartamot vesz igénybe, de utána nem fogod úgy érezni, mintha egyszerre kell megtanulnod a React-et és a JavaScript nyelvet is.
 
 >Megjegyzés
 >
