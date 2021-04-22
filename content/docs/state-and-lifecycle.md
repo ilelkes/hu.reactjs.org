@@ -203,7 +203,7 @@ Szeretnénk [felállítani egy időzítőt](https://developer.mozilla.org/en-US/
 
 Azt is szeretnénk, ha az [időzítő törölve lenne](https://developer.mozilla.org/en-US/docs/Web/API/WindowTimers/clearInterval), amikor a DOM által készített `Clock` el lesz távolítva. A React-ben ezt hívjuk "leválasztás"-nak vagy "unmounting"-nak.
 
-A komponens oszályban tudunk speciális metódusokat deklarálni, amik lefuttatnak egy kódot amikor a komponens előkészül, vagy leválik:
+A komponens osztályban tudunk speciális metódusokat deklarálni, amik lefuttatnak egy kódot amikor a komponens előkészül, vagy leválik:
 
 ```js{7-9,11-13}
 class Clock extends React.Component {
@@ -312,7 +312,7 @@ Vegyük át gyorsan mi is történik és a metódusok milyen sorrendben vannak m
 
 3) Amikor a `Clock` kimenet be van illesztve a DOM-ba, a React meghívja a `componentDidMount()` életciklus metódust. Ezen belül a `Clock` komponens megkéri a böngészőt, hogy az állítson fel egy időzítőt, ami minden másodpercben meghívja a komponens `tick()` metódusát.
 
-4) A böngésző minden másodpercben meghívja a `tick()` metódust. Ezen belül, a `Clock` komponens beütemez egy kezelői felület frissítést a `setState()` meghívásával egy objektummal, ami a jelenlegi időt tartalmazza. A `setState()` hívásnak köszönhetően a React tudja, hogy az állapot megváltozott, és újra meghívja a `render()` metódust, hogy megtudja, minek kéne megjelennie a képernyőn. Ezúttal a `this.state.date` a `render()` metódusban más lesz, és ezért a render kimenete tartalmazni fogja a frissítet időt. A React ennek megfelelően frissíti a DOM-ot.
+4) A böngésző minden másodpercben meghívja a `tick()` metódust. Ezen belül, a `Clock` komponens beütemez egy kezelői felület frissítést a `setState()` meghívásával egy objektummal, ami a jelenlegi időt tartalmazza. A `setState()` hívásnak köszönhetően a React tudja, hogy az állapot megváltozott, és újra meghívja a `render()` metódust, hogy megtudja, minek kéne megjelennie a képernyőn. Ezúttal a `this.state.date` a `render()` metódusban más lesz, és ezért a render kimenete tartalmazni fogja a frissített időt. A React ennek megfelelően frissíti a DOM-ot.
 
 5) Ha a `Clock` komponens el lesz távolítva a DOM-ból, a React meghívja a `componentWillUnmount()` életciklus metódust és az időzítő így megáll.
 
@@ -338,7 +338,7 @@ this.setState({comment: 'Helló'});
 
 Az egyetlen hely, ahol bármit is hozzárendelhetsz a `this.state`-hez, az a konstruktor.
 
-### Az állapot frissítések lehetnek aszinkronok {#state-updates-may-be-asynchronous}
+### Az állapotfrissítések lehetnek aszinkronok {#state-updates-may-be-asynchronous}
 
 A React összefoghat egy csomó `setState()` hívást egy szimpla frissítésbe a teljesítmény növelése érdekében.
 
@@ -373,7 +373,7 @@ this.setState(function(state, props) {
 });
 ```
 
-### Az állapot frissítések egyesítve vannak {#state-updates-are-merged}
+### Az állapotfrissítések egyesítve vannak {#state-updates-are-merged}
 
 Amikor meghívod a `setState()` metódust, a React egyesíti az általad szolgáltatott objektumot a jelenlegi állapottal.
 
